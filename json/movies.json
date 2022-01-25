@@ -1,0 +1,113 @@
+let movieList = `
+[
+    {
+        "movieName": "A Star is Born",
+        "likes": 0,
+        "image": "img/aStarIsBorn.jpg",
+        "genre": "musical, romantic, drama",
+        "comment": "Sob Opera",
+        "description": "A hard-drinking musician who discovers and falls in love with a young singer.",
+        "cast": "Bradley Cooper,Lady Gaga, Sam Elliott,...",
+        "director": "Eric Roth",
+        "runtime": "136 minutes"
+    },
+    {
+        "movieName": "Halloween",
+        "likes": 1,
+        "image": "img/halloween.jpg",
+        "genre": "horror",
+        "comment": "Horror Classic With Jamie Lee Curtis",
+        "description": "A post-traumatic Laurie Strode who prepares to face Michael Myers in a final showdown on Halloween night, forty years after she survived his killing spree.",
+        "cast": "Jamie Lee Curtis, Judy Greer, Andi Matichak,...",
+        "director": "David Gordon Green",
+        "runtime": "106 minutes"
+    },
+    {
+        "movieName": "First Man",
+        "likes": 0,
+        "image": "img/firstMan.jpg",
+        "genre": "drama",
+        "comment": "Ryan Fucking Gosling",
+        "description": "The film follows the years leading up to the Apollo 11 mission to the Moon in 1969.",
+        "cast": "Ryan Gosling, Claire Foy, Jason Clarke,...",
+        "director": "Damien Chazelle",
+        "runtime": "141 minutes"
+    },
+    {
+        "movieName": "Mandy",
+        "likes": 4,
+        "image": "img/mandy.jpg",
+        "genre": "splatter, action, horror",
+        "comment": "A Splatter Fest",
+        "description": "Somewhere near the Shadow Mountains in the year 1983, Red Miller lives with his girlfriend, artist Mandy Bloom, in a cabin near the lake. Red works as a logger, while Mandy has a day job as a cashier at a nearby gas station in the woods...",
+        "cast": "Nicolas Cage, Andrea Riseborough, Linus Roache,...",
+        "director": "Panos Cosmatos",
+        "runtime": "121 minutes"
+    },
+    {
+        "movieName": "Mama",
+        "likes": 5,
+        "image": "img/mama.jpg",
+        "genre": "horror",
+        "comment": "A Good Scare!",
+        "description": "The film follows two young girls abandoned in a forest cabin, fostered by an unknown entity that they fondly call 'Mama', which eventually follows them to their new suburban home led by two adults after their uncle retrieves them...",
+        "cast": "Jessica Chastain, Nikolaj Coster-Waldau,...",
+        "director": "Andy Muschietti",
+        "runtime": "100 minutes"
+    },
+    {
+        "movieName": "It",
+        "likes": 8,
+        "image": "img/it.jpg",
+        "genre": "horror",
+        "comment": "Stephen Kings Classic",
+        "description": "The film tells the story of seven children in Derry, Maine, who are terrorized by the eponymous being, only to face their own personal demons in the process...",
+        "cast": "Jaeden Lieberher, Bill Skarsgård,...",
+        "director": "Andy Muschietti",
+        "runtime": "135 minutes"
+    },
+    {
+        "movieName": "Red Dragon",
+        "likes": 7,
+        "image": "img/redDragon.jpg",
+        "genre": "thriller",
+        "comment": "Behold The Great Red Dragon!",
+        "description": "A prequel to The Silence of the Lambs, it sees FBI agent Will Graham enlisting the help of serial killer Hannibal Lecter to catch another killer, Francis Dolarhyde...",
+        "cast": "Anthony Hopkins, Edward Norton, Ralph Fiennes,...",
+        "director": "Brett Rattner",
+        "runtime": "124 minutes"
+    },
+    {
+        "movieName": "Evil Dead",
+        "likes": 4,
+        "image": "img/evilDead.jpg",
+        "genre": "horror",
+        "comment": "An Ode To The Chainsaw -WRRROOOMMM",
+        "description": "The film follows a group of five people being possessed and killed by supernatural entities in a remote cabin in the woods...",
+        "cast": "Jane Levy, Shiloh Fernandez, Lou Taylor Pucci,...",
+        "director": "Fede Álvarez",
+        "runtime": "92 minutes"
+    },
+    {
+        "movieName": "Silver Linings",
+        "likes": 3,
+        "image": "img/silverLinings.jpg",
+        "genre": "romance",
+        "comment": "An Adorable Romance",
+        "description": "Patrick Solitano Jr., a man with bipolar disorder who is released from a psychiatric hospital and moves back in with his parents...",
+        "cast": "Bradley Cooper, Jennifer Lawrence, Robert De Niro,...",
+        "director": "David O. Russell",
+        "runtime": "122 minutes"
+    },
+    {
+        "movieName": "Man Of Steel",
+        "likes": 6,
+        "image": "img/manOfSteel.jpg",
+        "genre": "comic",
+        "comment": "Supermans Origin Story",
+        "description": "Clark Kent assumes the role of mankind's protector as Superman, making the choice to face General Zod and prevent him from destroying humanity...",
+        "cast": "Henry Cavill, Amy Adams, Kevin Costner,...",
+        "director": "Zack Snyder",
+        "runtime": "122 minutes"
+    }
+]`

@@ -1,0 +1,418 @@
+/*
+1.General Rules
+2.Header 
+3.Navigation 
+4.Main 
+5.Footer
+6.Media Query
+*/
+/* General Rules */
+@font-face {
+  font-family: "Neoneon";
+  src: url("../font/Neoneon/Neoneon.otf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MadridGrunge";
+  src: url("../font/madrid_grunge/Madrid Grunge.otf");
+}
+
+@font-face {
+  font-family: "Reenie Beanie";
+  src: url("../font/Reenie_Beanie/ReenieBeanie-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/concreteBg.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.recess {
+  position: absolute;
+  z-index: -1;
+  height: 7rem;
+  width: 100%;
+  -webkit-box-shadow: 0 0.5em 2em #000000;
+          box-shadow: 0 0.5em 2em #000000;
+}
+
+.leftCurtainContainer {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 5.5%;
+  height: 100%;
+}
+
+.rightCurtainContainer {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 5.5%;
+  height: 100%;
+}
+
+.curtainImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.vignette {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0 0em 10em #000000;
+          box-shadow: inset 0 0em 10em #000000;
+  opacity: 0.75;
+}
+
+.neonLightTop {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 80%;
+  background-image: radial-gradient(ellipse farthest-side at 50% 0px, rgba(0, 120, 255, 0.65) 0%, rgba(0, 120, 255, 0) 90%);
+  mix-blend-mode: hard-light;
+}
+
+.neonLightBottom {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 23, 131, 0)), to(rgba(225, 23, 131, 0.15)));
+  background-image: linear-gradient(rgba(225, 23, 131, 0) 0%, rgba(225, 23, 131, 0.15) 100%);
+  mix-blend-mode: color;
+}
+
+/* Header - Section */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+header .neonContainer {
+  height: 7rem;
+}
+
+header .neonContainer h1 {
+  color: #b4f2ff;
+  font-family: "Neoneon";
+  font-size: 5rem;
+  text-shadow: 0 0 0.3em #00aeff;
+}
+
+header .neonContainer .movieNightStructure {
+  position: relative;
+  z-index: -1;
+  top: -1.1em;
+  color: #000000;
+  opacity: 0.6;
+}
+
+header .navContainer {
+  margin: 1em auto;
+  width: 85%;
+}
+
+header .navContainer .hidden {
+  visibility: hidden;
+}
+
+header .navContainer a {
+  text-decoration: none;
+  color: #ff4ab3;
+}
+
+header .navContainer li {
+  list-style-type: none;
+}
+
+header .navContainer li:hover a {
+  color: #ffffff;
+}
+
+header .navContainer .liSpacer {
+  padding: 1rem;
+}
+
+header .navContainer .lato {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+}
+
+header .navContainer .active {
+  font-family: "MadridGrunge", sans-serif;
+  font-size: 2rem !important;
+}
+
+header .navContainer button {
+  border: none;
+  background-color: transparent;
+  color: #00f9f9;
+  font-family: "Lato";
+  font-size: 1rem;
+}
+
+header .navContainer button:hover {
+  color: #ffffff;
+}
+
+header .navContainer .buttonSpacer {
+  margin-right: 2rem;
+}
+
+/* Main - Section */
+.mainContainer {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 80%;
+  opacity: 1;
+}
+
+.mainContainer .cardsContainer {
+  position: relative;
+  gap: 2em 4em;
+  /* Loop */
+  /* DVD Hover Effects */
+  /* Cardboard */
+}
+
+.mainContainer .cardsContainer .ranks {
+  width: 100%;
+  height: 3em;
+}
+
+.mainContainer .cardsContainer .dvdContainer {
+  position: relative;
+  z-index: 0;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  width: 10em;
+  background-image: url("../img/dvdHull.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-box-shadow: 0.3em 0.3em 0.8em #191919;
+          box-shadow: 0.3em 0.3em 0.8em #191919;
+}
+
+.mainContainer .cardsContainer .dvdContainer .rank {
+  position: absolute;
+  top: -5em;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  background-size: auto 4em;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.mainContainer .cardsContainer .dvdContainer .rankOneContainer {
+  position: absolute;
+  top: -8em;
+  left: 0;
+  width: 100%;
+  height: 5em;
+}
+
+.mainContainer .cardsContainer .dvdContainer .rankOneContainer .rankTxt {
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Reenie Beanie";
+  font-size: 2rem;
+  color: #00f9f9;
+}
+
+.mainContainer .cardsContainer .dvdContainer .rankOneContainer .rankSymbol {
+  width: 100%;
+  height: 4em;
+  background-image: url("../img/oiltwig1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.mainContainer .cardsContainer .dvdContainer .rankOneContainer::after {
+  content: "";
+  position: absolute;
+  top: 0em;
+  left: -10em;
+  width: 26em;
+  height: 30em;
+  background-image: url("../img/Corona.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.mainContainer .cardsContainer .dvdContainer .rankTwo {
+  background-image: url("../img/oiltwig2.png");
+}
+
+.mainContainer .cardsContainer .dvdContainer .rankThree {
+  background-image: url("../img/oiltwig3.png");
+}
+
+.mainContainer .cardsContainer .dvdContainer .commentContainer {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  position: absolute;
+  top: -3.5em;
+  right: -4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.75;
+}
+
+.mainContainer .cardsContainer .dvdContainer .commentContainer .arrowImg {
+  margin-top: 1em;
+  width: 2em;
+  height: 2em;
+  background-image: url("../img/Arrow1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mainContainer .cardsContainer .dvdContainer .commentContainer .commentText {
+  margin-bottom: 0;
+  width: 5em;
+  text-align: center;
+  font-family: 'Reenie Beanie';
+  font-size: 1.5rem;
+  color: #b4f2ff;
+}
+
+.mainContainer .cardsContainer .dvdContainer .coverContainer .coverImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainContainer .cardsContainer .dvdContainer .coverContainer .highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+}
+
+.mainContainer .cardsContainer .dvdContainer .likeContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.mainContainer .cardsContainer .dvdContainer .likeContainer .likeBtn {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mainContainer .cardsContainer .dvdContainer .likeContainer .likeBtn .likeImg {
+  padding-right: 0.3em;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.mainContainer .cardsContainer .dvdContainer .likeContainer .likeBtn .likeTxt {
+  color: #e5e5e5;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.mainContainer .cardsContainer .dvdContainer::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: -10%;
+  left: -22.2%;
+  width: 135%;
+  height: 120%;
+  background-image: url("../img/Loop.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+}
+
+.mainContainer .cardsContainer .dvdContainer:hover {
+  -webkit-box-shadow: 0em 0em 3em #00aeff;
+          box-shadow: 0em 0em 3em #00aeff;
+}
+
+.mainContainer .cardsContainer .dvdContainer:hover .highlight {
+  opacity: 0.1;
+}
+
+.mainContainer .cardsContainer .dvdContainer:hover::after {
+  opacity: 1;
+}
+
+.mainContainer .cardsContainer .cardBoard {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 2em;
+  position: relative;
+  top: -2.2em;
+  background-image: url("../img/CardBoard.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-box-shadow: 0em 1em 1.5em #000000;
+          box-shadow: 0em 1em 1.5em #000000;
+}
+
+/* Footer - Section */
+.pFooter {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  color: #e5e5e5;
+}
+/*# sourceMappingURL=main.css.map */
